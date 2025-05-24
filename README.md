@@ -15,11 +15,8 @@ See the ``review_reply.tex`` file for usage instructions.
 
 ![screenshot](https://raw.githubusercontent.com/GjjvdBurg/LaTeXReviewReplyTemplate/master/.screenshot.png)
 
+See also `commands.tex` for some useful highlighting commands that can be used during the revision process.
+
 ## Notes
 
-License: MIT (see LICENSE file)
-
-Author: [Gertjan van den Burg](https://gertjan.dev)
-
-If you have questions or find problems with the software, please open an issue 
-on GitHub.
+This is a fork of the original template by Gertjan van den Burg. 

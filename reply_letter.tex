@@ -15,9 +15,9 @@
 %
 %  - Need reply: Signals that a point needs to get a reply.
 %
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,letterpaper]{article}
 
-\usepackage{geometry}
+\usepackage[top=1in,bottom=1in]{geometry}
 \usepackage[most]{tcolorbox}
 
 % Colors
@@ -26,12 +26,12 @@
 \definecolor{lightred}{rgb}{0.8,0.4,0.4}
 
 % Boxes
-\newtcolorbox{replybox}{colback=lightgray, grow to right by=-10mm, grow to 
-	left by=-10mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
-\newtcolorbox{partialbox}{colback=lightyellow, grow to right by=-10mm, grow to 
-	left by=-10mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
-\newtcolorbox{todobox}{colback=lightred, grow to right by=-10mm, grow to left 
-	by=-10mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
+\newtcolorbox{replybox}{colback=lightgray, grow to right by=0mm, grow to 
+	left by=0mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
+\newtcolorbox{partialbox}{colback=lightyellow, grow to right by=0mm, grow to 
+	left by=0mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
+\newtcolorbox{todobox}{colback=lightred, grow to right by=0mm, grow to left 
+	by=0mm, boxrule=0pt, boxsep=0pt, breakable, before skip=10pt}
 
 % Counters
 \newcounter{epntcnt}
@@ -63,7 +63,7 @@
 }
 \newcommand{\todoreply}[1]{%
 	\begin{todobox}%
-		Todo reply: \emph{#1}
+		Todo reply: #1
 	\end{todobox}%
 }
 \newcommand{\needsreply}{%
@@ -95,16 +95,27 @@
 \author{John Doe}
 
 \begin{document}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-in culpa qui officia deserunt mollit anim id est laborum.\\
+\begin{flushleft}
+	Dear Editor, 
+\end{flushleft}
+{
+\hspace{5mm}
+We received the reviews of our revised manuscript ??? that had been submitted to \textit{Journal of ???}.
+We hereby submit our revised version of the manuscript with edits that address comments from the editor and reviewers.
+The changes carried out in the new version of the manuscript are typeset in red. Comments are made in the margins in blue
+when the changes are not clear.
+We are deeply grateful for the comments and suggestions from the editor and reviewers, which greatly helped improve the manuscript.
 
-The Authors\\
+\hspace{5mm}
+Attached to this letter we report our responses to the comments pointed out by the reviewers.
+The comments from the reviewers are summarized below, and our responses to the comments are boxed in grey.
+}
+\begin{flushleft}
+Sincerely, \\
+??? and ???
+\end{flushleft}
 
-\today.
+\today
 
 \begin{editor}
 	% NOTE: Here you would put the editor comment verbatim after each 

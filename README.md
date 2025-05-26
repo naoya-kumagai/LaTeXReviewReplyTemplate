@@ -19,4 +19,4 @@ See also `commands.tex` for some useful highlighting commands that can be used d
 
 ## Notes
 
-This is a fork of the original template by Gertjan van den Burg. 
+Naoya Kumagai added minor changes to the original template made by Gertjan van den Burg. 
